@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioParamLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioParamLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioParamLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioParamLibrary\obj\x86\Release\scioParamLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioParamLibrary\obj\x86\Release\scioParamLibrary.pdb

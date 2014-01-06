@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A68EA023-3464-492E-BEF4-95C15CD5D2B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cuGenerarInformes</RootNamespace>
+    <AssemblyName>cuGenerarInformes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\sgmpro\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\sgmpro\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\trunk\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\trunk\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.1001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shared\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NumaletNet, Version=1.0.3718.41976, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shared\NumaletNet.dll</HintPath>
+    </Reference>
+    <Reference Include="printdgv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shared\printdgv.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CUEstadoCuentaDeudor.cs" />
+    <Compile Include="PanelFiltroHistoricoEstadosCuentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroHistoricoEstadosCuentas.Designer.cs">
+      <DependentUpon>PanelFiltroHistoricoEstadosCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUListadoHistoricoCuentas.cs" />
+    <Compile Include="PanelFiltroGestionesHora.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroGestionesHora.Designer.cs">
+      <DependentUpon>PanelFiltroGestionesHora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUGestionesHora.cs" />
+    <Compile Include="PanelFiltroListaGeneradas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroListaGeneradas.Designer.cs">
+      <DependentUpon>PanelFiltroListaGeneradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelFiltroResumenGestiones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroResumenGestiones.Designer.cs">
+      <DependentUpon>PanelFiltroResumenGestiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUResumenGestiones.cs" />
+    <Compile Include="PanelFiltroAccionesRealizadas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroAccionesRealizadas.Designer.cs">
+      <DependentUpon>PanelFiltroAccionesRealizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUAccionesRealizadas.cs" />
+    <Compile Include="CUCobranzasConsolidado.cs" />
+    <Compile Include="PanelFiltroCobranzasConsolidado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroCobranzasConsolidado.Designer.cs">
+      <DependentUpon>PanelFiltroCobranzasConsolidado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelFiltroCobranzasIngresadas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroCobranzasIngresadas.designer.cs">
+      <DependentUpon>PanelFiltroCobranzasIngresadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUCobranzasMensuales.cs" />
+    <Compile Include="PanelFiltroCobranzasMensuales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroCobranzasMensuales.Designer.cs">
+      <DependentUpon>PanelFiltroCobranzasMensuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelFiltroListaCuentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroListaCuentas.Designer.cs">
+      <DependentUpon>PanelFiltroListaCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUListadoCuentas.cs" />
+    <Compile Include="CUCobranzasIngresadas.cs">
+    </Compile>
+    <Compile Include="CUGenerarCarta.cs" />
+    <Compile Include="CUGenerarRecibo.cs" />
+    <Compile Include="CUListadoGestiones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CUListadoGestionesGeneradas.cs" />
+    <Compile Include="DSInformes.cs">
+      <DependentUpon>DSInformes.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSInformes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInformes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PanelFiltroListaGestiones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFiltroListaGestiones.Designer.cs">
+      <DependentUpon>PanelFiltroListaGestiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelImprimirFactura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelImprimirFactura.Designer.cs">
+      <DependentUpon>PanelImprimirFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelSeleccionTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelSeleccionTemplate.Designer.cs">
+      <DependentUpon>PanelSeleccionTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelSeleccionTemplateLista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelSeleccionTemplateLista.Designer.cs">
+      <DependentUpon>PanelSeleccionTemplateLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\REstadoCuentaDeudor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RFacturaRe.cs">
+      <DependentUpon>RFacturaRe.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\RHistoricoCuentas.cs">
+      <DependentUpon>RHistoricoCuentas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\RGestionesHora.cs">
+      <DependentUpon>RGestionesHora.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\RAccionesRealizadas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RAccionesRealizadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RCobranzasConsolidado.cs">
+      <DependentUpon>RCobranzasConsolidado.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\RCobranzas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RCobranzas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RCobranzasMensuales.cs">
+      <DependentUpon>RCobranzasMensuales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\RCuentas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RCuentas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RRecibo.cs">
+      <DependentUpon>RRecibo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\RReciboRe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RReciboRe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RResumenCuentas.cs">
+      <DependentUpon>RResumenCuentas.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\RFactura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RFactura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RGestiones.cs">
+      <DependentUpon>RGestiones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\RGestionesGeneradas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RGestionesGeneradas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\RResumenGestiones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RResumenGestiones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\scioBaseLibrary\scioBaseLibrary.csproj">
+      <Project>{AD2461E2-4B9D-4FDE-A137-E09106E69C0A}</Project>
+      <Name>scioBaseLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioControlLibrary\scioControlLibrary.csproj">
+      <Project>{59868B40-E020-4670-A050-0416612DC0F4}</Project>
+      <Name>scioControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioParamLibrary\scioParamLibrary.csproj">
+      <Project>{B7850306-4B1E-4CB6-8348-0AD2D9DF250D}</Project>
+      <Name>scioParamLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioPersistentLibrary\scioPersistentLibrary.csproj">
+      <Project>{7E75D0C5-513D-4FEF-BD22-1FBD9E7E3441}</Project>
+      <Name>scioPersistentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioReportLibrary\scioReportLibrary.csproj">
+      <Project>{E39A9314-1294-4F23-AF05-4F7E34388940}</Project>
+      <Name>scioReportLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioSecureLibrary\scioSecureLibrary.csproj">
+      <Project>{1AEAFA5B-198F-4EA9-9BB6-E3F68F5DF0A2}</Project>
+      <Name>scioSecureLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioThirdPartLibrary\scioThirdPartLibrary.csproj">
+      <Project>{29546862-CA49-4A1D-9DD5-6513536D6C80}</Project>
+      <Name>scioThirdPartLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioToolLibrary\scioToolLibrary.csproj">
+      <Project>{2F345668-0201-4BD5-AE30-97A0742E6D3F}</Project>
+      <Name>scioToolLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sgmpro\sgmpro.csproj">
+      <Project>{2D8306B3-9299-4D45-9E90-2C2DF4F39A4C}</Project>
+      <Name>sgmpro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\toolsGestion\toolsGestion.csproj">
+      <Project>{FEC4C746-F212-4A91-BB02-2FED8F384825}</Project>
+      <Name>toolsGestion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DSInformes.xsc">
+      <DependentUpon>DSInformes.xsd</DependentUpon>
+    </None>
+    <None Include="DSInformes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInformes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSInformes.xss">
+      <DependentUpon>DSInformes.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PanelFiltroHistoricoEstadosCuentas.resx">
+      <DependentUpon>PanelFiltroHistoricoEstadosCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroGestionesHora.resx">
+      <DependentUpon>PanelFiltroGestionesHora.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroListaGeneradas.resx">
+      <DependentUpon>PanelFiltroListaGeneradas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroResumenGestiones.resx">
+      <DependentUpon>PanelFiltroResumenGestiones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroAccionesRealizadas.resx">
+      <DependentUpon>PanelFiltroAccionesRealizadas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroCobranzasConsolidado.resx">
+      <DependentUpon>PanelFiltroCobranzasConsolidado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroCobranzasIngresadas.resx">
+      <DependentUpon>PanelFiltroCobranzasIngresadas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroCobranzasMensuales.resx">
+      <DependentUpon>PanelFiltroCobranzasMensuales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroListaCuentas.resx">
+      <DependentUpon>PanelFiltroListaCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFiltroListaGestiones.resx">
+      <DependentUpon>PanelFiltroListaGestiones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelImprimirFactura.resx">
+      <DependentUpon>PanelImprimirFactura.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelSeleccionTemplate.resx">
+      <DependentUpon>PanelSeleccionTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelSeleccionTemplateLista.resx">
+      <DependentUpon>PanelSeleccionTemplateLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RFacturaRe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RFacturaRe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\REstadoCuentaDeudor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RHistoricoCuentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RHistoricoCuentas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RGestionesHora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RGestionesHora.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RAccionesRealizadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RAccionesRealizadas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RCobranzasConsolidado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RCobranzasConsolidado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RCobranzas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RCobranzas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RCobranzasMensuales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RCobranzasMensuales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RCuentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RCuentas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RRecibo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RRecibo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RReciboRe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RReciboRe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RResumenCuentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RResumenCuentas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RFactura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RFactura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RGestiones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RGestiones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RGestionesGeneradas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RGestionesGeneradas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RResumenGestiones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RResumenGestiones.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sgmpro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanquear.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_24x24.png" />
+    <None Include="Templates\TempBancoColumbia.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TempConvenio.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TempGestionPrejudicial.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TempIntimacion.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TempIntimacionJudicial.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TempIntimacionMFForestal.dot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VSTOEE90">
+      <Guid>{E985809A-84A6-4F35-86D6-9B52119AB9D7}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

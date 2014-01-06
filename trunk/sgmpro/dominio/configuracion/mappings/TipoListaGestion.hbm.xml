@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="TipoListaGestion">
+    <id name="Id" column="tlg_id"><generator class="assigned"/></id>
+    <property  name="Nombre" column="tlg_nombre"/>
+    <property  name="Descripcion" column="tlg_descripcion"/>
+    <property  name="MaxCuentas" column="tlg_maxcuentas"/>
+    <property  name="Prioridad" column="tlg_prioridad"/>
+    <property name="FechaAlta" column="tlg_FechaAlta"/>
+    <many-to-one name="Perfil" column="tlg_perfil" cascade="none"/>    
+    <many-to-one name="TipoGestion" column="tlg_tipogestion" class="scioParamLibrary.dominio.Parametro" not-null="false"/>
+    <property name="Elegibilidad" column="tlg_elegibilidad"/>
+    <property name="Pendiente" column="tlg_pendiente"/>
+    <property name="Cancelacion" column="tlg_cancelacion"/>
+    <property name="FechaBaja" column="tlg_fechabaja"/>
+    <bag name="ListaEntidades" table="TipoLista_Entidad" lazy="false" cascade="save-update">
+      <key column="tlg_Id"/>
+      <many-to-many class="Entidad" column="ent_id"/>      
+    </bag>
+    <bag name="ListaEstrategias" table="TipoLista_Estrategia" lazy="false" cascade="save-update">
+      <key column="tlg_Id"/>
+      <many-to-many class="Estrategia" column="est_id"/>
+    </bag>
+  </class>
+</hibernate-mapping>

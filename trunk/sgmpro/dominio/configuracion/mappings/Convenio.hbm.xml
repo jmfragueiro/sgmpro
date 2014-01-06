@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Convenio">
+    <id name="Id" column="cvn_id"><generator class="assigned"/></id>
+    <many-to-one name="Cuenta" class="Cuenta" not-null="true" foreign-key="fk_Convenio_Cuenta">
+      <column name="cvn_cuenta" index="ifk_convenio_cuenta"/>
+    </many-to-one>
+    <many-to-one name="Tipo" column="cvn_tipo" class="TipoConvenio" not-null="true" foreign-key="fk_Convenio_Tipo"/>
+    <property name="Descripcion" column="cvn_descripcion"/>
+    <property name="CapitalOrigen" column="cvn_capitalorigen" not-null="true"/>
+    <property name="InteresOrigen" column="cvn_interesorigen" not-null="true"/>
+    <property name="HonorariosOrigen" column="cvn_honorariosorigen" not-null="true"/>
+    <property name="GastosOrigen" column="cvn_gastosorigen" not-null="true"/>
+    <property name="Quita" column="cvn_quita" not-null="true"/>
+    <property name="Anticipo" column="cvn_anticipo" not-null="true"/>
+    <property name="GastosAnticipo" column="cvn_gastosanticipo" not-null="true"/>
+    <property name="DeudaBase" column="cvn_deudabase" not-null="true"/>
+    <property name="CtdadCuotas" column="cvn_ctdadcuotas" not-null="true"/>
+    <property name="MontoFinal" column="cvn_montofinal" not-null="true"/>
+    <property name="FechaInicio" column="cvn_fechainicio"/>
+    <property name="Redondeado" column="cvn_redondeado" not-null="true"/>
+    <property name="Activo" column="cvn_activo" not-null="true"/>
+    <property name="FechaAlta" column="cvn_fechaalta"/>
+    <property name="FechaBaja" column="cvn_fechabaja"/>
+    <bag name="Cuotas" cascade="all">
+      <key column="deu_convenio"/>
+      <one-to-many class="Deuda"/>
+    </bag>
+  </class>
+</hibernate-mapping>

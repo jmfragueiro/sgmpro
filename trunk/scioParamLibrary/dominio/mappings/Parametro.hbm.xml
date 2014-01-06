@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="scioParamLibrary"
+                   namespace="scioParamLibrary.dominio">
+  <class name="Parametro">
+    <id name="Id" column="par_id"><generator class="assigned"/></id>
+    <property name="Clave" column="par_clave" not-null="true" unique="true"/>
+    <property name="Nombre" column="par_nombre" not-null="true"/>
+    <property name="Clase" column="par_clase" not-null="true"/>
+    <property name="Tipo" column="par_tipo" not-null="true"/>
+    <property name="Orden" column="par_orden"/>
+    <property name="Valorint" column="par_valorint"/>
+    <property name="Valorlong" column="par_valorlong"/>
+    <property name="Valorstring" column="par_valorstring"/>
+    <property name="Valordate" column="par_valordate"/>
+    <property name="Valorchar" column="par_valorchar"/> 
+    <property name="Valorbool" column="par_valorbool"/>
+    <property name="Valordouble" column="par_valordouble"/>
+    <property name="Valordouble2" column="par_valordouble2"/>
+    <property name="FechaBaja" column="par_fechabaja"/>
+  </class>
+</hibernate-mapping>

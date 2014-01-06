@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Persona">
+    <id name="Id" column="prs_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="prs_nombre" not-null="true"/>
+    <property name="DNI" not-null="true">
+      <column name="prs_dni" index="idx_persona_dni"/>
+    </property>
+    <property name="Cuit" column="prs_cuit"/>
+    <many-to-one name="TipoIVA" column="prs_tipoiva" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Persona_TipoIVA"/>
+    <many-to-one name="EstadoCivil" column="prs_estadocivil" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Persona_EstadoCivil"/>
+    <many-to-one name="Sexo" column="prs_sexo" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Persona_Sexo"/>
+    <property name="Profesion" column="prs_profesion"/>
+    <property name="Trabajo" column="prs_trabajo"/>
+    <many-to-one name="Economia" column="prs_economia" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Persona_Economia"/>
+    <property name="Comentario" column="prs_comentario"/>
+    <property name="FechaUMod" column="prs_fechaumod" not-null="true"/>
+    <property name="FechaBaja" column="prs_fechabaja"/>
+    <bag name="Contactos" cascade="all">
+      <key column="con_persona"/>
+      <one-to-many class="Contacto"/>
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,1 @@
+alter table gestion alter column ges_resultadodesc nvarchar(512);

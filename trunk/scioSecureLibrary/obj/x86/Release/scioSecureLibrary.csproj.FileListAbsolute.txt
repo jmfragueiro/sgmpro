@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioSecureLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioSecureLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioSecureLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioSecureLibrary\obj\x86\Release\scioSecureLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioSecureLibrary\obj\x86\Release\scioSecureLibrary.pdb

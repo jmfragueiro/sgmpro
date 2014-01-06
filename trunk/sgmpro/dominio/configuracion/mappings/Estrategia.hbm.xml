@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Estrategia">
+    <id name="Id" column="est_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="est_nombre" />
+    <property name="Descripcion" column="est_descripcion"/>
+    <property name="FechaAlta" column="est_fechaAlta"/>
+    <property name="FechaUMod" column="est_fechaUMod"/>
+    <property name="FechaBaja" column="est_fechaBaja"/>        
+    <bag name="ListaPredicados" cascade="all">
+      <key column="pre_estrategia"/>
+      <one-to-many class="Predicado"/>
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Contacto">
+    <id name="Id" column="con_id"><generator class="assigned"/></id>
+    <many-to-one name="Tipo" column="con_tipo" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Contacto_Tipo"/>
+    <property name="Descripcion" column="con_descripcion" not-null="true"/>
+    <property name="Principal" column="con_principal" not-null="true"/>
+    <property name="Calle" column="con_calle"/>
+    <property name="Puerta" column="con_puerta"/>
+    <property name="PisoDepto" column="con_pisodepto"/>
+    <property name="IdGIS" column="con_idgis"/>
+    <many-to-one name="Provincia" column="con_provincia" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Contacto_Provincia"/>
+    <many-to-one name="Localidad" column="con_localidad" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Contacto_Localidad"/>
+    <property name="Cp" column="con_cp" not-null="true"/>
+    <property name="Telefono1" column="con_telefono1"/>
+    <property name="Telefono2" column="con_telefono2"/>
+    <property name="Celular" column="con_celular"/>
+    <property name="Fax" column="con_fax"/>
+    <property name="Email" column="con_email"/>
+    <property name="FechaUMod" column="con_fechaumod" not-null="true"/>
+    <many-to-one name="VerificadoPor" class="scioSecureLibrary.dominio.Usuario" not-null="false" foreign-key="fk_Contacto_Verificador">
+      <column name="con_verificadopor" index="ifk_contacto_usuario"/>
+    </many-to-one>    
+    <many-to-one name="Origen" column="con_origen" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Contacto_Origen"/>
+    <property name="FechaBaja" column="con_fechabaja"/>
+    <many-to-one name="Persona" class="Persona" not-null="false" foreign-key="fk_Contacto_Persona">
+      <column name="con_persona" index="ifk_contacto_persona"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

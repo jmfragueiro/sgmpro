@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Deuda">
+    <id name="Id" column="deu_id"><generator class="assigned"/></id>
+    <property name="FechaVencimiento" column="deu_fechavto" not-null="true"/>    
+    <many-to-one name="Concepto" column="deu_concepto" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Deuda_Concepto"/>
+    <many-to-one name="Detalle" column="deu_detalle" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Deuda_Detalle"/>
+    <property name="Descripcion" column="deu_descripcion"/>
+    <many-to-one name="Estado" column="deu_estado" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Deuda_Estado"/>
+    <property name="Capital" column="deu_capital"/>
+    <property name="Interes" column="deu_interes"/>
+    <property name="Honorarios" column="deu_honorarios"/>
+    <property name="Gastos" column="deu_gastos"/>
+    <property name="Informada" column="deu_informada"/>
+    <many-to-one name="Cuenta" class="Cuenta" not-null="false" foreign-key="fk_Deuda_Cuenta">
+      <column name="deu_cuenta" index="ifk_deuda_cuenta"/>
+    </many-to-one>
+    <many-to-one name="Convenio" class="Convenio" not-null="false" foreign-key="fk_Deuda_Convenio">
+      <column name="deu_convenio" index="ifk_deuda_convenio"/>
+    </many-to-one>
+    <property name="Cuota" column="deu_cuota"/>
+    <property name="FechaAlta" column="deu_fechaalta" />
+    <property name="CapitalO" column="deu_capitalo"/>
+    <property name="InteresO" column="deu_intereso"/>
+    <property name="HonorO" column="deu_honoro"/>
+    <property name="GastosO" column="deu_gastoso"/>    
+    <property name="FechaBaja" column="deu_fechabaja" />
+    <bag name="Imputaciones" cascade="all">
+      <key column="imp_deuda"/>
+      <one-to-many class="Imputacion"/>
+    </bag>
+  </class>
+</hibernate-mapping>

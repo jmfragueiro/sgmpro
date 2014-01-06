@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.gestion">
+  <class name="Gestion">
+    <id name="Id" column="ges_id"><generator class="assigned"/></id>
+    <many-to-one name="Cuenta" class="sgmpro.dominio.configuracion.Cuenta" not-null="false" foreign-key="fk_Gestion_Cuenta">
+      <column name="ges_cuenta" index="ifk_gestion_cuenta"/>
+    </many-to-one>
+    <many-to-one name="Tipo" column="ges_tipo" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Gestion_Tipo"/>
+    <many-to-one name="Estado" column="ges_estado" class="scioParamLibrary.dominio.Parametro" not-null="false" foreign-key="fk_Gestion_Estado"/>    
+    <property name="FechaInicio" column="ges_fechainicio"/>
+    <many-to-one name="Usuario" column="ges_usuario" class="scioSecureLibrary.dominio.Usuario" not-null="false" foreign-key="fk_Gestion_Usuario"/>
+    <many-to-one name="Resultado" column="ges_resultado" class="scioParamLibrary.dominio.Parametro" not-null="false" foreign-key="fk_Gestion_Resultado"/>
+    <property name="ResultadoDesc" column="ges_resultadodesc"/>
+    <property name="ResultadoFecha" column="ges_resultadofecha"/>    
+    <property name="FechaCierre" column="ges_fechacierre"/>
+    <many-to-one name="Contactado" class="sgmpro.dominio.configuracion.Persona" not-null="false" foreign-key="fk_Gestion_Contactado">
+      <column name="ges_contactado" index="ifk_gestion_contactado"/>
+    </many-to-one>
+    <many-to-one name="Contacto" class="sgmpro.dominio.configuracion.Contacto" not-null="false" foreign-key="fk_Gestion_Contacto">
+      <column name="ges_contacto" index="ifk_gestion_contacto"/>
+    </many-to-one>
+    <property name="FechaAnulacion" column="ges_fechaanulacion"/>
+    <property name="FechaUMod" column="ges_fechaumod"/>
+    <property name="FechaBaja" column="ges_fechabaja"/>
+    <many-to-one name="Lista" class="sgmpro.dominio.configuracion.ListaGestion" not-null="false" foreign-key="fk_Gestion_ListaGestion">
+      <column name="ges_lista" index="ifk_gestion_lista"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

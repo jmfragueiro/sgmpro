@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.caja">
+  <class name="Factura">
+    <id name="Id" column="fac_id"><generator class="assigned"/></id>
+    <many-to-one name="Tipo" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Recibo_Tipo">
+      <column name="fac_tipo" index="ifk_factura_tipo"/>
+    </many-to-one>
+    <property name="Numero" not-null="true">
+      <column name="fac_numero" index="idx_recibo_numero" not-null="true"/>
+    </property>
+    <property name="Fecha" column="fac_fecha" not-null="true"/>
+    <many-to-one name="Cliente" class="sgmpro.dominio.configuracion.Entidad" not-null="true" foreign-key="fk_Factura_Entidad">
+      <column name="fac_cliente" index="ifk_factura_entidad"/>
+    </many-to-one>
+    <property name="Contado" column="fac_contado" not-null="true"/>
+    <property name="IVA" column="fac_iva" not-null="true"/>
+    <property name="FechaBaja" column="fac_fechabaja"/>
+    <bag name="Items" cascade="all">
+      <key column="itf_factura"/>
+      <one-to-many class="ItemFactura"/>
+    </bag>
+  </class>
+</hibernate-mapping>

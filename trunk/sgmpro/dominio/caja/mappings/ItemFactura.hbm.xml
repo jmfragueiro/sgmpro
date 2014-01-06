@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.caja">
+  <class name="ItemFactura">
+    <id name="Id" column="itf_id"><generator class="assigned"/></id>
+    <many-to-one name="Factura" class="Factura" not-null="true" foreign-key="fk_Item_Factura">
+      <column name="itf_factura" index="ifk_item_factura"/>
+    </many-to-one>
+    <property name="Numero" column="itf_numero" not-null="true"/>    
+    <property name="Concepto" column="itf_concepto"/>
+    <property name="Precio" column="itf_precio"/>
+    <property name="FechaBaja" column="itf_fechabaja" />
+  </class>
+</hibernate-mapping>

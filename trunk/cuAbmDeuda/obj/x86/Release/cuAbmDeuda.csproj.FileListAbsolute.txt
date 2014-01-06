@@ -1,0 +1,11 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmDeuda.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmDeuda.pdb
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\cuAbmDeuda.PanelPreviewDeuda.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\cuAbmDeuda.PanelAbmvDeuda.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\cuAbmDeuda.Properties.Resources.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\GenerateResource-ResGen.read.6.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\cuAbmDeuda.dll
+D:\Desarrollo\sgmpro\trunk\cuAbmDeuda\obj\x86\Release\cuAbmDeuda.pdb

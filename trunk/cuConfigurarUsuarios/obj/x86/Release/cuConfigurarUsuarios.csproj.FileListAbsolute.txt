@@ -1,0 +1,16 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuConfigurarUsuarios.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuConfigurarUsuarios.pdb
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelAbmvPerfil.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelPreviewPerfil.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelAbmvRol.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelAbmvUsuario.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelPreviewRol.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.PanelPreviewUsuario.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.Properties.Resource.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.Properties.Resources.resources
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.dll
+D:\Desarrollo\sgmpro\trunk\cuConfigurarUsuarios\obj\x86\Release\cuConfigurarUsuarios.pdb

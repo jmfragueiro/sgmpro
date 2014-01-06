@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.gestion">
+  <class name="EstadoCuenta">
+    <id name="Id" column="esc_id"><generator class="assigned"/></id>
+    <many-to-one name="Cuenta" column="esc_cuenta" class="sgmpro.dominio.configuracion.Cuenta" not-null="true" foreign-key="fk_EstadoCuenta_Cuenta"/>
+    <many-to-one name="Estado" column="esc_estado" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_EstadoCuenta_Estado"/>    
+    <property name="FechaInicio" column="esc_fechainicio" not-null="true"/>
+    <many-to-one name="Usuario" class="scioSecureLibrary.dominio.Usuario" not-null="true" foreign-key="fk_EstadoCuenta_Usuario">
+      <column name="esc_usuario" index="ifk_estadocuenta_usuario"/>
+    </many-to-one>
+    <property name="Comentario" column="esc_comentario" not-null="false"/>
+    <property name="FechaBaja" column="esc_fechabaja"/>
+  </class>
+</hibernate-mapping>

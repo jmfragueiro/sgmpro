@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="scioSecureLibrary"
+                   namespace="scioSecureLibrary.dominio">
+  <class name="Sesion">
+    <id name="Id" column="ses_id"><generator class="assigned"/></id>
+    <property name="Gestiones" column="ses_gestiones" not-null="true"/>
+    <property name="TiempoActivo" column="ses_tiempoactivo" not-null="true"/>
+    <property name="TiempoInactivo" column="ses_tiempoinactivo"/>
+    <property name="FechaLogon" column="ses_fechalogon" not-null="true"/>
+    <property name="FechaLogoff" column="ses_fechalogoff"/>  
+    <many-to-one name="Usuario" column="ses_usuario" class="Usuario"
+      not-null="true" foreign-key="fk_Sesion_Usuario"
+      cascade="none" fetch="select" access="property" unique="false"/>
+    <property name="FechaBaja" column="ses_fechabaja"/>
+  </class>
+</hibernate-mapping>

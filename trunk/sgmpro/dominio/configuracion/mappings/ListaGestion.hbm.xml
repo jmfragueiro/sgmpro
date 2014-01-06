@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="ListaGestion">
+    <id name="Id" column="lge_id"><generator class="assigned"/></id>
+    <property name="Descripcion" column="lge_descripcion"/>
+    <property name="Nombre" column="lge_nombre"/>
+    <property name="FchCreacion" column="lge_fchcreacion"/>
+    <property name="FechaBaja" column="lge_fechabaja"/>
+    <many-to-one name="TipoLista" class="TipoListaGestion" not-null="true" foreign-key="fk_Lista_TipoLista">
+      <column name="lge_tipolista" index="ifk_lista_tipolista"/>
+    </many-to-one>  
+    <bag name="ListaGestiones">
+      <key column="ges_lista"/>
+      <one-to-many class="sgmpro.dominio.gestion.Gestion"/>
+    </bag>
+  </class> 
+</hibernate-mapping>

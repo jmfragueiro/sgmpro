@@ -1,0 +1,10 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmVariable.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmVariable.pdb
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\cuAbmVariable.PanelGUIVariable.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\cuAbmVariable.PanelAbmvVariable.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\cuAbmVariable.PanelPreviewVariable.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\cuAbmVariable.dll
+D:\Desarrollo\sgmpro\trunk\cuAbmVariable\obj\x86\Release\cuAbmVariable.pdb

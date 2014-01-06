@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioLoggingLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioLoggingLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioLoggingLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioLoggingLibrary\obj\x86\Release\scioLoggingLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioLoggingLibrary\obj\x86\Release\scioLoggingLibrary.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="scioSecureLibrary"
+                   namespace="scioSecureLibrary.dominio">
+  <class name="Perfil">
+    <id name="Id" column="prf_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="prf_nombre" not-null="true" unique="true"/>
+    <property name="Descripcion" column="prf_descripcion"/>
+    <property name="Activado" column="prf_activado" not-null="true"/>
+    <property name="FechaBaja" column="prf_fechabaja"/>
+  </class>
+</hibernate-mapping>

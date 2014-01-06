@@ -1,0 +1,1 @@
+insert into parametro (par_id, par_clave, par_nombre, par_clase, par_tipo, par_orden, par_valorstring, par_valorbool, par_valorlong, par_valordate, par_valordouble, par_fechabaja) values (newid(),'GESTION.FECHARECIBO','FECHA DESDE LA CUAL SE TOMA EL RECIBO',2,6,5,'La fecha utilizada como base para tomar la del recibo',0,5,'1753-01-01 00:00:00.000',0,'1753-01-01 00:00:00.000');

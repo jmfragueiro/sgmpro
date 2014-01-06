@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Cuenta">
+    <id name="Id" column="cta_id"><generator class="assigned"/></id>
+    <many-to-one name="Entidad" class="Entidad" not-null="false" foreign-key="fk_Cuenta_Entidad">
+      <column name="cta_entidad" index="ifk_cuenta_entidad"/>
+    </many-to-one>
+    <many-to-one name="Producto" class="Producto" not-null="true" foreign-key="fk_Cuenta_Producto">
+      <column name="cta_producto" index="ifk_cuenta_producto"/>
+    </many-to-one>
+    <property name="Codigo" not-null="true">
+      <column name="cta_codigo" index="idx_cuenta_codigo"/>
+    </property>    
+    <property name="Descripcion" column="cta_descripcion" not-null="true"/>
+    <many-to-one name="Titular" class="Persona" not-null="true" foreign-key="fk_Cuenta_Titular">
+      <column name="cta_titular" index="ifk_cuenta_titular"/>
+    </many-to-one>
+    <many-to-one name="Garante" class="Persona" not-null="false" foreign-key="fk_Cuenta_Garante">
+      <column name="cta_garante" index="ifk_cuenta_garante"/>
+    </many-to-one>        
+    <many-to-one name="Estado" column="cta_estado" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Cuenta_Estado"/>
+    <property name="Expediente" column="cta_expediente"/>
+    <property name="Legales" column="cta_legales"/>
+    <many-to-one name="Gestor" class="scioSecureLibrary.dominio.Usuario" not-null="false" foreign-key="fk_Cuenta_Gestor">
+      <column name="cta_gestor" index="ifk_cuenta_gestor"/>
+    </many-to-one>    
+    <property name="Activada" column="cta_activada" not-null="true"/>
+    <property name="Vigencia" column="cta_vigencia"/>
+    <many-to-one name="ListaAsignada" column="cta_listaasignada" class="ListaGestion" not-null="false" foreign-key="fk_Cuenta_ListaGestion"/>
+    <many-to-one name="ConvenioActivo" class="Convenio" not-null="false" foreign-key="fk_Cuenta_ConvenioActivo">
+      <column name="cta_convenioactivo" index="ifk_cuenta_convenio"/>
+    </many-to-one>
+    <property name="FechaElegible" column="cta_fechaelegible" />    
+    <property name="FechaAlta" column="cta_fechaalta" not-null="true"/>
+    <property name="FechaAsignacion" column="cta_fechaasignacion" not-null="true"/>
+    <property name="FechaBaja" column="cta_fechabaja" />
+    <bag name="Deudas" cascade="all">
+      <key column="deu_cuenta"/>
+      <one-to-many class="Deuda"/>
+    </bag>
+    <bag name="Gestiones" cascade="all">
+      <key column="ges_cuenta"/>
+      <one-to-many class="sgmpro.dominio.gestion.Gestion"/>
+    </bag>
+  </class>
+</hibernate-mapping>

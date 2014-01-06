@@ -1,0 +1,8 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmProducto.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmProducto.pdb
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\cuAbmProducto.PanelAbmvProducto.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\cuAbmProducto.dll
+D:\Desarrollo\sgmpro\trunk\cuAbmProducto\obj\x86\Release\cuAbmProducto.pdb

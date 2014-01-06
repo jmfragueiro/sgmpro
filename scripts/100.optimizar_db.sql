@@ -1,0 +1,50 @@
+alter database sgmpro set single_user with rollback immediate;
+
+dbcc checkdb (sgmpro, repair_rebuild) with all_errormsgs;
+
+alter index all on actd rebuild with (statistics_norecompute = off);
+alter index all on contacto rebuild with (statistics_norecompute = off);
+alter index all on convenio rebuild with (statistics_norecompute = off);
+alter index all on cuenta rebuild with (statistics_norecompute = off);
+alter index all on deuda rebuild with (statistics_norecompute = off);
+alter index all on entidad rebuild with (statistics_norecompute = off);
+alter index all on entidad_formapago rebuild with (statistics_norecompute = off);
+alter index all on entidad_tipoconvenio rebuild with (statistics_norecompute = off);
+alter index all on entidad_tipogestion rebuild with (statistics_norecompute = off);
+alter index all on entidad_tiporecibo rebuild with (statistics_norecompute = off);
+alter index all on estadocuenta rebuild with (statistics_norecompute = off);
+alter index all on estrategia rebuild with (statistics_norecompute = off);
+alter index all on factura rebuild with (statistics_norecompute = off);
+alter index all on gestion rebuild with (statistics_norecompute = off);
+alter index all on imputacion rebuild with (statistics_norecompute = off);
+alter index all on itemfactura rebuild with (statistics_norecompute = off);
+alter index all on listagestion rebuild with (statistics_norecompute = off);
+alter index all on nodotree rebuild with (statistics_norecompute = off);
+alter index all on pago rebuild with (statistics_norecompute = off);
+alter index all on parametro rebuild with (statistics_norecompute = off);
+alter index all on perfil rebuild with (statistics_norecompute = off);
+alter index all on permiso rebuild with (statistics_norecompute = off);
+alter index all on persona rebuild with (statistics_norecompute = off);
+alter index all on recibo rebuild with (statistics_norecompute = off);
+alter index all on relacion rebuild with (statistics_norecompute = off);
+alter index all on rol rebuild with (statistics_norecompute = off);
+alter index all on rol_permiso rebuild with (statistics_norecompute = off);
+alter index all on rol_rol rebuild with (statistics_norecompute = off);
+alter index all on sesion rebuild with (statistics_norecompute = off);
+alter index all on tempgenlis rebuild with (statistics_norecompute = off);
+alter index all on tipoconvenio rebuild with (statistics_norecompute = off);
+alter index all on tipolista_entidad rebuild with (statistics_norecompute = off);
+alter index all on tipolista_estrategia rebuild with (statistics_norecompute = off);
+alter index all on tipolistagestion rebuild with (statistics_norecompute = off);
+alter index all on tramo rebuild with (statistics_norecompute = off);
+alter index all on usuario rebuild with (statistics_norecompute = off);
+alter index all on usuario_perfil rebuild with (statistics_norecompute = off);
+alter index all on usuario_rol rebuild with (statistics_norecompute = off);
+alter index all on variable rebuild with (statistics_norecompute = off);
+alter index all on job rebuild with (statistics_norecompute = off);
+alter index all on ejecucion rebuild with (statistics_norecompute = off);
+alter index all on job_tipolistagestion rebuild with (statistics_norecompute = off);
+
+exec sp_updatestats; 
+
+alter database sgmpro set multi_user;

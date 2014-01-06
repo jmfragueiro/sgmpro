@@ -1,0 +1,2 @@
+--ALTER TABLE [dbo].[Gestion] DROP CONSTRAINT [FKC7183BF31F755D33];
+--alter table gestion drop column ges_listagestion;

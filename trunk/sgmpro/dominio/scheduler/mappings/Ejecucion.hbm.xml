@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.scheduler">
+  <class name="Ejecucion">
+    <id name="Id" column="exe_id"><generator class="assigned"/></id>
+    <many-to-one name="Job" class="Job" not-null="false" foreign-key="fk_Ejecucion_Job">
+      <column name="exe_job" index="ifk_ejecucion_job"/>
+    </many-to-one>        
+    <property name="Inicio" column="exe_inicio" not-null="false"/>
+    <property name="Fin" column="exe_fin" not-null="false" />
+    <property name="Resultado" column="exe_resultado" not-null="false"/>
+    <property name="FechaBaja" column="exe_fechabaja" not-null="true"/>
+  </class>
+</hibernate-mapping>

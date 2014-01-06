@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Tramo">
+    <id name="Id" column="tra_id"><generator class="assigned"/></id>
+    <many-to-one name="Producto" column="tra_producto" class="Producto"
+      not-null="false" foreign-key="fk_Tramo_Producto"/>
+    <property name="Nombre" column="tra_nombre" not-null="true"/>
+    <property name="Limite" column="tra_limite" not-null="true"/>
+    <property name="Punitorio" column="tra_punitorio"/>
+    <property name="Honorario" column="tra_honorario"/>
+    <property name="FechaBaja" column="tra_fechabaja"/>
+  </class>
+</hibernate-mapping>

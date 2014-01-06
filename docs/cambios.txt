@@ -1,0 +1,28 @@
+Nuevos Desarrollos:
+
+1) Columna 'Recibo' en listados de pagos: ahora todos las ventanas del sistema, que muestran listas de pagos, 
+   muestran una columna que contiene el tipo y numero de recibo asociado (en caso de existir). El sistema tb
+   permite ordenar y filtrar por dicha columna.
+2) Actualizacion interfaz de importacion de Provencred: ahora la 'reasignacion' que hace provnecred no pisa el   
+   la fecha de asignacion, sino que simplemente carga esa fecha en el comentario de la cuenta (manteniendo la 
+   fecha de asignacion que existia (si la cuenta existia antes, obvio).
+3) Busqueda Manual de Cuentas por datos de Contacto: la ventana de búsqueda de cuentas permite ahora llegar a
+   las mismas a partir de alguna información de algún dato de contacto del titular o garante de la cuenta, como
+   Calle, Numero, Descripcion, IDGIS, etc.
+4) Generación de Recibos para Pagos existentes: el sistema permite (con los permisos adecuados) generarle un 
+   Recibo (o varios según los tipos de importes pagados) a un Pago que no posea todavía Recibo registrado (por
+   ejemplo porque se cortó el sistema al generar el recibo, etc.).
+5) Impresión de Copia Fiel de Recibos: el sistema ahora permite (con los permisos adecuados) que: A) o bien se 
+   Reimprima un recibo existente (en cuyo caso se imprimen simplemente los datos -permite sacar un recibo que
+   no salió por algún problema en la impresora o el sistema, pero que sí se generó-); o B) bien se imprima una
+   Copia Fiel del Recibo (que imprime una especie de 'escaneo' del recibo impreso -para rendiciones, etc.-).
+6) Generación automática de Documentos para todas las gestiones de una Lista: el sistema permite ahora elegir
+   una lista de gestion generada y generar, valga la redundancia, un tipo de documento para cada gestion de 
+   la lista que no haya sido tomada ni gestionada por algún otro usuario. Esto permite generar una lista para 
+   postal (o terreno) y en una sola operación generar todas las cartas para mandar. Las gestiones afectadas 
+   quedan en estado 'EN PROCESO' y asignadas al usuario que realiza la operación.   
+7) Generación de Log de Impresión de Recibos más exhaustiva: hemos regenerado todo el proceso de impresion
+   de recibos y ahora tambien detalla un log del proceso mucho mas exhaustivo. La intención es seguir de cerca 
+   para determinar las causas de porque en algunas ocasiones el primer recibo del día no está saliendo. Igual,
+   para cuando no sale impreso el recibo, se puede ahora aplicar lo detallado en el punto 2) o lo detallado en
+   el punto 5.A) de este mail.

@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioPersistentLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioPersistentLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioPersistentLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioPersistentLibrary\obj\x86\Release\scioPersistentLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioPersistentLibrary\obj\x86\Release\scioPersistentLibrary.pdb

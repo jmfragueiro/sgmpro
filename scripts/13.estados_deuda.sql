@@ -1,0 +1,5 @@
+insert into parametro (par_id, par_clave, par_nombre, par_clase, par_tipo, par_orden, par_valorstring, par_valorbool, par_valorlong, par_valordate, par_valordouble, par_fechabaja) values ('D2CD0030-0EE5-4671-9D04-9635D864D7FB','ESTADODEUDA.CANCELADA','CANCELADA',1,6,2,'CANCELADA',1,0,'1753-01-01 00:00:00.000',0,'1753-01-01 00:00:00.000');
+insert into parametro (par_id, par_clave, par_nombre, par_clase, par_tipo, par_orden, par_valorstring, par_valorbool, par_valorlong, par_valordate, par_valordouble, par_fechabaja) values ('BFF726E1-A06E-4B6B-90CC-AAB178C7D2FA','ESTADODEUDA.PARCIAL','PENDIENTE PARCIAL',1,6,4,'PENDIENTE PARCIAL',0,0,'1753-01-01 00:00:00.000',0,'1753-01-01 00:00:00.000');
+insert into parametro (par_id, par_clave, par_nombre, par_clase, par_tipo, par_orden, par_valorstring, par_valorbool, par_valorlong, par_valordate, par_valordouble, par_fechabaja) values ('CB1BE5FE-566D-4857-A4D2-135A87498AF4','ESTADODEUDA.PENDIENTE','PENDIENTE',1,6,1,'PENDIENTE',0,0,'1753-01-01 00:00:00.000',0,'1753-01-01 00:00:00.000');
+
+delete from parametro where par_id = '6ED198B4-FC1C-4829-B62A-64000B57D030';

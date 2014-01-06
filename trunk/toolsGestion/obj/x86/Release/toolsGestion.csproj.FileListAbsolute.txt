@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\toolsGestion.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\toolsGestion.pdb
+D:\Desarrollo\sgmpro\trunk\toolsGestion\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\toolsGestion\obj\x86\Release\toolsGestion.dll
+D:\Desarrollo\sgmpro\trunk\toolsGestion\obj\x86\Release\toolsGestion.pdb

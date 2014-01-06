@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="scioSecureLibrary" 
+                   namespace="scioSecureLibrary.dominio">
+  <class name="Usuario">
+    <id name="Id" column="usu_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="usu_nombre" not-null="true" unique="true"/>
+    <property name="Password" column="usu_password" not-null="true"/>
+    <property name="Empleado" column="usu_empleado" not-null="true"/>
+    <property name="Legajo" column="usu_legajo" not-null="true" unique="true"/>
+    <property name="Activado" column="usu_activado" not-null="true"/>
+    <property name="FechaUMod" column="con_fechaumod" not-null="true"/>
+    <property name="FechaBaja" column="con_fechabaja"/>    
+    <bag name="Roles" table="Usuario_Rol">
+      <key column="usu_id" not-null="true" foreign-key="fk_UsuarioRol_Usuario"/>
+      <many-to-many class="Rol" column="rol_id" foreign-key="fk_UsuarioRol_Rol"/>
+    </bag>
+    <bag name="Perfiles" table="Usuario_Perfil">
+      <key column="usu_id" not-null="true" foreign-key="fk_UsuarioPerfil_Usuario"/>
+      <many-to-many class="Perfil" column="prf_id" foreign-key="fk_UsuarioPerfil_Perfil"/>
+    </bag>
+  </class>
+</hibernate-mapping>
+

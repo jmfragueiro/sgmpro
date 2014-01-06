@@ -1,0 +1,10 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmPersona.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\cuAbmPersona.pdb
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\cuAbmPersona.PanelAbmvPersona.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\cuAbmPersona.PanelPreviewPersona.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\cuAbmPersona.Properties.Resources.resources
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\cuAbmPersona.dll
+D:\Desarrollo\sgmpro\trunk\cuAbmPersona\obj\x86\Release\cuAbmPersona.pdb

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Predicado">
+    <id name="Id" column="pre_Id"><generator class="assigned"/></id>
+    <property name="NroOrden" column="pre_NroOrden"/>
+    <property name="Descripcion" column="pre_Descripcion"/>
+    <property name="Selector" column="pre_Selector"/>
+    <property name="VocabloPredicado" column="pre_VocabloPredicado"/>
+    <property name="Criterio" column="pre_Criterio"/>
+    <property name="Valor" column="pre_Valor"/>
+    <many-to-one name="Variable" column="pre_variable" cascade="all-delete-orphan"/>
+    <property name="Conector" column="pre_Conector"/>
+    <property name="FechaAlta" column="pre_FechaAlta"/>
+    <property name="FechaUMod" column="pre_FechaUMod"/>
+    <property name="FechaBaja" column="pre_fechabaja"/>    
+    <many-to-one name="Estrategia" column="pre_estrategia" cascade="all-delete-orphan"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioBaseLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioBaseLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.Properties.Resources.resources
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.vista.WinAcercaDe.resources
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.vista.WinInicio.resources
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.vista.WinPrincipal.resources
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioBaseLibrary\obj\x86\Release\scioBaseLibrary.pdb

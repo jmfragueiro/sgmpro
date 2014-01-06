@@ -1,0 +1,10 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioReportLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioReportLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\scioReportLibrary.FrmVisualizador.resources
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\scioReportLibrary.PanelVisorReporte.resources
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\scioReportLibrary.Properties.Resources.resources
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\scioReportLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioReportLibrary\obj\x86\Release\scioReportLibrary.pdb

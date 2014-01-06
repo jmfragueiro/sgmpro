@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Variable">
+    <id name="Id" column="var_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="var_nombre" not-null="true"/>
+    <property name="Descripcion" column="var_descripcion"/>
+    <property name="Valor" column="var_valor"/>    
+    <property name="FechaBaja" column="var_fechabaja"/>
+  </class>
+</hibernate-mapping>

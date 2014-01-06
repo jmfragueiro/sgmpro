@@ -1,0 +1,22 @@
+TEMAS ENCARADOS EN ESTA NUEVA VERSION
+=====================================
+
+1- Modificacion a Entidad/Producto/Tramo. OK.
+2- Modificacion a Tipos de Convenio. OK.
+3- Modificacion a la generacion de convenios.
+4- Nuevos estados de deuda para convenios y anulacion. OK.
+5- Controlar edicion de deudas en convenio. OK.
+6- Ajustar deuda de cuentas (cancelar toda su deuda con un boton). OK
+7- Historial de Estados de Deuda. OK.
+8- Asignacion/Desasignacion de cuentas a usuario gestor. OK.
+9- Generación de listas para usuarios. OK.
+10- Modificar a mano la fecha elegible. OK.
+11- NO Migracion de deudas en convenio (y marcar deudas a convenio). OK.
+12- Vocablo Usuario Gestor. OK. !!!INCROPORAR AL PROYECTO!!!!
+13- MIGRACION
+
+hacer:
+anular un pago, ver implicancias como reflotar el convenio y reasignar a la cuenta.OK.
+no eliminar deudas de convenio.OK.
+
+

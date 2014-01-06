@@ -1,0 +1,265 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FEC4C746-F212-4A91-BB02-2FED8F384825/f:VocabloLibrary.cs" caret="8760" fromTop="24" />
+      <File id="A68EA023-3464-492E-BEF4-95C15CD5D2B7/f:PanelSeleccionTemplate.cs" caret="2484" fromTop="21" />
+      <File id="38971C02-215A-4AE3-AD4C-A313474F8365/f:PanelAbmvConvenio.cs" caret="0" fromTop="0" />
+      <File id="24304A9F-69A4-4E8F-BE2B-8759727FD29F/f:WinNovedades.cs" caret="30002" fromTop="12" />
+      <File id="E540F21A-CBF2-47C9-8A3A-BA0E7A71827A/f:PanelAbmvJob.Designer.cs" caret="30115" fromTop="18" />
+      <File id="E540F21A-CBF2-47C9-8A3A-BA0E7A71827A/f:PanelAbmvJob.cs" caret="0" fromTop="0" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/f:SgmproImport.cs" caret="152250" fromTop="0" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.Designer.cs" caret="55198" fromTop="16" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Contacto.cs" caret="2088" fromTop="0" />
+      <File id="59868B40-E020-4670-A050-0416612DC0F4/d:interfaces/f:IControladorListable.cs" caret="5175" fromTop="17" />
+      <File id="59868B40-E020-4670-A050-0416612DC0F4/f:PanelListABMV.cs" caret="5442" fromTop="8" />
+      <File id="3FE2090B-3BCC-4215-B463-BF69A8BADC43/f:CUListProductos.cs" caret="1404" fromTop="19" />
+      <File id="45AF5D74-F43A-4275-927A-62E8C5EC72D3/f:CUListCuentas.cs" caret="2309" fromTop="20" />
+      <File id="59868B40-E020-4670-A050-0416612DC0F4/f:CUListGenerico.cs" caret="5767" fromTop="10" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListPersonasSelCta.cs" caret="1713" fromTop="25" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListEntidadSelCta.cs" caret="1518" fromTop="10" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListContactosSelCta.cs" caret="1752" fromTop="18" />
+      <File id="630CB75E-CC26-4C48-BD06-A804E9C5C9D6/f:CUListContactos.cs" caret="1315" fromTop="16" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListProductosSelCta.cs" caret="2023" fromTop="13" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="6681" fromTop="13" />
+      <File id="A68EA023-3464-492E-BEF4-95C15CD5D2B7/f:app.config" caret="0" fromTop="0" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/f:app.config" caret="0" fromTop="0" />
+      <File id="00A6BEE2-3FBF-49E9-A9FC-332A1232D329/f:CUIniciarSesion.cs" caret="4022" fromTop="10" />
+      <File id="EAE65022-7B4D-4FF4-81FA-4D3A6C3EAACC/f:PanelAbmvPago.cs" caret="4159" fromTop="18" />
+      <File id="62ADA017-03DE-40B8-BD2B-94546279EC9D/f:PanelAbmvRecibo.cs" caret="7202" fromTop="22" />
+      <File id="7E75D0C5-513D-4FEF-BD22-1FBD9E7E3441/f:EsquemaRelacional.cs" caret="0" fromTop="0" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/f:SgmproRelacional.cs" caret="6195" fromTop="10" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Recibo.cs" caret="4026" fromTop="11" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Convenio.cs" caret="0" fromTop="0" />
+      <File id="38971C02-215A-4AE3-AD4C-A313474F8365/f:CUAbmConvenio.cs" caret="2127" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="1420" fromTop="12" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="4040" fromTop="3" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="5217" fromTop="18" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="6324" fromTop="11" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="7444" fromTop="21" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="15272" fromTop="15" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Contacto.cs" caret="0" fromTop="0" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="16636" fromTop="24" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="17090" fromTop="26" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="26565" fromTop="24" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="27814" fromTop="24" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="13404" fromTop="12" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="13778" fromTop="16" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="14852" fromTop="16" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:WinSelectCuenta.cs" caret="12338" fromTop="14" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListEntidadSelCta.cs" caret="1711" fromTop="13" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListContactosSelCta.cs" caret="1752" fromTop="18" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListPersonasSelCta.cs" caret="1713" fromTop="25" />
+      <File id="04CA774E-ECDB-419E-95C7-F80701AE85C4/f:CUListProductosSelCta.cs" caret="1720" fromTop="28" />
+      <File id="3FE2090B-3BCC-4215-B463-BF69A8BADC43/f:CUListProductos.cs" caret="1333" fromTop="16" />
+      <File id="630CB75E-CC26-4C48-BD06-A804E9C5C9D6/f:CUListContactos.cs" caret="1315" fromTop="16" />
+      <File id="62ADA017-03DE-40B8-BD2B-94546279EC9D/f:PanelAbmvRecibo.cs" caret="6602" fromTop="15" />
+      <File id="62ADA017-03DE-40B8-BD2B-94546279EC9D/f:PanelAbmvRecibo.cs" caret="7659" fromTop="25" />
+      <File id="62ADA017-03DE-40B8-BD2B-94546279EC9D/f:PanelAbmvRecibo.cs" caret="8666" fromTop="19" />
+      <File id="62ADA017-03DE-40B8-BD2B-94546279EC9D/f:PanelAbmvRecibo.cs" caret="9199" fromTop="25" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Recibo.cs" caret="4091" fromTop="19" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Recibo.cs" caret="3927" fromTop="22" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/f:SgmproRelacional.cs" caret="5408" fromTop="4" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/f:SgmproRelacional.cs" caret="6195" fromTop="10" />
+      <File id="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C/d:dominio/d:configuracion/f:Recibo.cs" caret="4026" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="chkControlados" priority="31" />
+      <Item value="_controlCuentas" priority="31" />
+      <Item value="Criterios`0" priority="191" />
+      <Item value="true" priority="95" />
+      <Item value="foreach" priority="63" />
+      <Item value="Parametros`0" priority="63" />
+      <Item value="parametro" priority="31" />
+      <Item value="private" priority="31" />
+      <Item value="bool" priority="31" />
+      <Item value="false" priority="31" />
+      <Item value="habiaGestion" priority="63" />
+      <Item value="if" priority="191" />
+      <Item value="Gestion`0" priority="31" />
+      <Item value="new" priority="63" />
+      <Item value="Gestion" priority="28" />
+      <Item value="Cuenta" priority="31" />
+      <Item value="Contacto" priority="32" />
+      <Item value="ObjetoEnEdicion" priority="64" />
+      <Item value="Estado" priority="32" />
+      <Item value="Parametro`0" priority="31" />
+      <Item value="FechaInicio" priority="32" />
+      <Item value="DateTime`0" priority="128" />
+      <Item value="FechaAnulacion" priority="32" />
+      <Item value="FechaBaja" priority="32" />
+      <Item value="FechaCierre" priority="32" />
+      <Item value="FechaUMod" priority="32" />
+      <Item value="Id" priority="32" />
+      <Item value="Usuario" priority="32" />
+      <Item value="Tipo" priority="32" />
+      <Item value="ges" priority="31" />
+      <Item value="gestion" priority="383" />
+      <Item value="SistemaErrorException`0" priority="63" />
+      <Item value="string" priority="383" />
+      <Item value="desc" priority="127" />
+      <Item value="ResultadoDesc" priority="32" />
+      <Item value="null" priority="159" />
+      <Item value="btnGenerarRecibo" priority="31" />
+      <Item value="_objeto" priority="127" />
+      <Item value="Recibo`0" priority="62" />
+      <Item value="BindingList&lt;ICriterioConsulta&gt;" priority="28" />
+      <Item value="rec" priority="32" />
+      <Item value="return" priority="63" />
+      <Item value="resulta" priority="127" />
+      <Item value="sql" priority="31" />
+      <Item value="static" priority="31" />
+      <Item value="Contacto`0" priority="31" />
+      <Item value="txtCDescripcion" priority="63" />
+      <Item value="txtCCalle" priority="63" />
+      <Item value="txtCEmail" priority="63" />
+      <Item value="txtCPisoDepto" priority="63" />
+      <Item value="txtCPuerta" priority="63" />
+      <Item value="txtCIdgis" priority="63" />
+      <Item value="txtCTelefonos" priority="63" />
+      <Item value="ObjetoMaster" priority="63" />
+      <Item value="is" priority="63" />
+      <Item value="Entidad`0" priority="31" />
+      <Item value="Persona`0" priority="31" />
+      <Item value="Numero" priority="65" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.CheckBox">
+      <Item value="Checked" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:cuAbmCuenta.CUListCuentas">
+      <Item value="Filtros" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioPersistentLibrary.criterios.Criterios">
+      <Item value="And`0" priority="26" />
+      <Item value="Like`0" priority="26" />
+      <Item value="Igual`0" priority="53" />
+      <Item value="Distinto`0" priority="26" />
+      <Item value="Or`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioParamLibrary.dominio.repos.Parametros">
+      <Item value="GetByCriteria`0" priority="26" />
+      <Item value="GetByClave`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:scioParamLibrary.dominio.Parametro">
+      <Item value="Id" priority="26" />
+      <Item value="Nombre" priority="26" />
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Persona">
+      <Item value="getContactoPrincipal`0" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Convenio">
+      <Item value="Cuenta" priority="27" />
+      <Item value="DeudaBase" priority="54" />
+      <Item value="TotalOrigen" priority="53" />
+      <Item value="Quita" priority="26" />
+      <Item value="Anticipo" priority="26" />
+      <Item value="GastosAnticipo" priority="26" />
+      <Item value="Tipo" priority="26" />
+      <Item value="CtdadCuotas" priority="26" />
+      <Item value="FechaInicio" priority="26" />
+      <Item value="MontoFinal" priority="26" />
+      <Item value="getCuota`0" priority="26" />
+      <Item value="Descripcion" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="108" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.gestion.Gestion">
+      <Item value="Estado" priority="26" />
+      <Item value="Usuario" priority="26" />
+      <Item value="Resultado" priority="26" />
+      <Item value="ResultadoDesc" priority="53" />
+      <Item value="Cuenta" priority="53" />
+      <Item value="FechaUMod" priority="26" />
+      <Item value="FechaCierre" priority="26" />
+      <Item value="save`0" priority="26" />
+      <Item value="FechaInicio" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioBaseLibrary.Sistema">
+      <Item value="Controlador" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:scioBaseLibrary.interfases.IControladorSistema">
+      <Item value="SecurityService" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:scioSecureLibrary.interfases.IControladorSeguridad">
+      <Item value="getUsuario`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.TipoConvenio">
+      <Item value="Nombre" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Date" priority="26" />
+      <Item value="Equals`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Deuda">
+      <Item value="Total" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Cuenta">
+      <Item value="ListaAsignada" priority="26" />
+      <Item value="save`0" priority="26" />
+      <Item value="agregarGestion`0" priority="26" />
+      <Item value="Titular" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioToolLibrary.Fechas">
+      <Item value="FechaNull" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioToolLibrary.enums.ENivelMensaje">
+      <Item value="INFORMACION" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Visible" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioControlLibrary.enums.EModoVentana">
+      <Item value="VIEW" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@scioPersistentLibrary.acceso.RepositorioGenerico`1">
+      <Item value="GetByCriteria`0" priority="26" />
+      <Item value="GetUniqueByCriteria`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Contacto">
+      <Item value="Persona" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Recibo">
+      <Item value="Pago" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:sgmpro.dominio.configuracion.Pago">
+      <Item value="Capital" priority="26" />
+      <Item value="Cuenta" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Equals`0" priority="53" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

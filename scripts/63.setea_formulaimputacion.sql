@@ -1,0 +1,1 @@
+update producto set pro_formulaimputacion = 'G100:H20:C100:I100'

@@ -1,0 +1,5 @@
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioInterfazLibrary.dll
+D:\Desarrollo\sgmpro\trunk\trunk\x86\Release\scioInterfazLibrary.pdb
+D:\Desarrollo\sgmpro\trunk\scioInterfazLibrary\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Desarrollo\sgmpro\trunk\scioInterfazLibrary\obj\x86\Release\scioInterfazLibrary.dll
+D:\Desarrollo\sgmpro\trunk\scioInterfazLibrary\obj\x86\Release\scioInterfazLibrary.pdb

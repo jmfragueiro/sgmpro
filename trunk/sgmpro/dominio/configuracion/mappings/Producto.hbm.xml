@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Producto">
+    <id name="Id" column="pro_id" ><generator class="assigned"/></id>
+    <many-to-one name="Entidad" column="pro_entidad" class="Entidad" not-null="false" foreign-key="fk_Producto_Entidad"/>
+    <property name="Codigo" column="pro_codigo" not-null="true"/>
+    <property name="Nombre" column="pro_nombre" not-null="true"/>
+    <property name="Descripcion" column="pro_descripcion"/>
+    <property name="Actualizar" column="pro_actualizar" not-null="true"/>
+    <property name="Activado" column="pro_activado" not-null="true"/>
+    <property name="TramosTemporales" column="pro_tramostemporales" not-null="true"/>
+    <property name="FormulaImputacion" column="pro_formulaimputacion"/>
+    <property name="DeudaEnCuotas" column="pro_deudaencuotas" not-null="true"/>
+    <property name="UnificaGastos" column="pro_unificagastos" not-null="true"/>
+    <property name="FechaBaja" column="pro_fechabaja"/>
+    <bag name="Tramos" cascade="all">
+      <key column="tra_producto"/>
+      <one-to-many class="Tramo"/>
+    </bag>
+  </class>
+</hibernate-mapping>

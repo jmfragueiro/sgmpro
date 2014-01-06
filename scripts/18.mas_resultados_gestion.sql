@@ -1,0 +1,1 @@
+insert into parametro (par_id, par_clave, par_nombre, par_clase, par_tipo, par_orden, par_valorlong, par_valorstring, par_valorbool, par_valordate, par_valordouble, par_fechabaja) values (newid(),'RESULTADOGESTION.PROMESASUCURSAL','PROMESA PAGO SUCURSAL',1,6,18,1,'Fecha Prom.',1,'1753-01-011 00:00:00.000',0,'1753-01-01 00:00:00.000');

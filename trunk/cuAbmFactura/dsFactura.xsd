@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFactura" targetNamespace="http://tempuri.org/dsFactura.xsd" xmlns:mstns="http://tempuri.org/dsFactura.xsd" xmlns="http://tempuri.org/dsFactura.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sgmproConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sgmproConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.cuAbmFactura.Properties.Settings.GlobalReference.Default.sgmproConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FacturaTableAdapter" GeneratorDataComponentClassName="FacturaTableAdapter" Name="Factura" UserDataComponentName="FacturaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sgmproConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select t.par_valorstring Tipo, f.fac_numero Numero, f.fac_fecha Fecha,
+e.ent_nombre Cliente,e.ent_direccion Domicilio, e.ent_cuit Cuit,
+f.fac_contado Contado,f.fac_iva Iva, f.fac_fechabaja FechaBajaFac,
+i.itf_numero NroLinea , i.itf_concepto Concepto, i.itf_precio Precio, i.itf_fechabaja FechaBajaLin
+from Factura f
+inner join Parametro t on f.fac_tipo = t.par_id
+inner join Entidad e on f.fac_cliente = e.ent_id
+inner join ItemFactura i on i.itf_factura = f.fac_id
+where f.fac_fechabaja = '01/01/1753'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tipo" DataSetColumn="Tipo" />
+              <Mapping SourceColumn="Numero" DataSetColumn="Numero" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Cliente" DataSetColumn="Cliente" />
+              <Mapping SourceColumn="Contado" DataSetColumn="Contado" />
+              <Mapping SourceColumn="Iva" DataSetColumn="Iva" />
+              <Mapping SourceColumn="FechaBajaFac" DataSetColumn="FechaBajaFac" />
+              <Mapping SourceColumn="NroLinea" DataSetColumn="NroLinea" />
+              <Mapping SourceColumn="Concepto" DataSetColumn="Concepto" />
+              <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="FechaBajaLin" DataSetColumn="FechaBajaLin" />
+              <Mapping SourceColumn="Domicilio" DataSetColumn="Domicilio" />
+              <Mapping SourceColumn="Cuit" DataSetColumn="Cuit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFactura" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsFactura" msprop:Generator_DataSetName="dsFactura" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Factura" msprop:Generator_UserTableName="Factura" msprop:Generator_RowDeletedName="FacturaRowDeleted" msprop:Generator_RowChangedName="FacturaRowChanged" msprop:Generator_RowClassName="FacturaRow" msprop:Generator_RowChangingName="FacturaRowChanging" msprop:Generator_RowEvArgName="FacturaRowChangeEvent" msprop:Generator_RowEvHandlerName="FacturaRowChangeEventHandler" msprop:Generator_TableClassName="FacturaDataTable" msprop:Generator_TableVarName="tableFactura" msprop:Generator_RowDeletingName="FacturaRowDeleting" msprop:Generator_TablePropName="Factura">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipo" msprop:Generator_UserColumnName="Tipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero" msprop:Generator_UserColumnName="Numero" msprop:Generator_ColumnPropNameInRow="Numero" msprop:Generator_ColumnVarNameInTable="columnNumero" msprop:Generator_ColumnPropNameInTable="NumeroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" />
+              <xs:element name="Cliente" msprop:Generator_UserColumnName="Cliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contado" msprop:Generator_UserColumnName="Contado" msprop:Generator_ColumnPropNameInRow="Contado" msprop:Generator_ColumnVarNameInTable="columnContado" msprop:Generator_ColumnPropNameInTable="ContadoColumn" type="xs:boolean" />
+              <xs:element name="Iva" msprop:Generator_UserColumnName="Iva" msprop:Generator_ColumnPropNameInRow="Iva" msprop:Generator_ColumnVarNameInTable="columnIva" msprop:Generator_ColumnPropNameInTable="IvaColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FechaBajaFac" msprop:Generator_UserColumnName="FechaBajaFac" msprop:Generator_ColumnPropNameInRow="FechaBajaFac" msprop:Generator_ColumnVarNameInTable="columnFechaBajaFac" msprop:Generator_ColumnPropNameInTable="FechaBajaFacColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NroLinea" msprop:Generator_UserColumnName="NroLinea" msprop:Generator_ColumnPropNameInRow="NroLinea" msprop:Generator_ColumnVarNameInTable="columnNroLinea" msprop:Generator_ColumnPropNameInTable="NroLineaColumn" type="xs:int" />
+              <xs:element name="Concepto" msprop:Generator_UserColumnName="Concepto" msprop:Generator_ColumnPropNameInRow="Concepto" msprop:Generator_ColumnVarNameInTable="columnConcepto" msprop:Generator_ColumnPropNameInTable="ConceptoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Precio" msprop:Generator_UserColumnName="Precio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" type="xs:double" />
+              <xs:element name="FechaBajaLin" msprop:Generator_UserColumnName="FechaBajaLin" msprop:Generator_ColumnPropNameInRow="FechaBajaLin" msprop:Generator_ColumnVarNameInTable="columnFechaBajaLin" msprop:Generator_ColumnPropNameInTable="FechaBajaLinColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Domicilio" msprop:Generator_UserColumnName="Domicilio" msprop:Generator_ColumnVarNameInTable="columnDomicilio" msprop:Generator_ColumnPropNameInRow="Domicilio" msprop:Generator_ColumnPropNameInTable="DomicilioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cuit" msprop:Generator_UserColumnName="Cuit" msprop:Generator_ColumnVarNameInTable="columnCuit" msprop:Generator_ColumnPropNameInRow="Cuit" msprop:Generator_ColumnPropNameInTable="CuitColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

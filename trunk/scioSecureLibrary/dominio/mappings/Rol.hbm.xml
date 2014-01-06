@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="scioSecureLibrary"
+                   namespace="scioSecureLibrary.dominio">
+  <class name="Rol">
+    <id name="Id" column="rol_id"><generator class="assigned"/></id>
+    <property name="Nombre" column="rol_nombre" not-null="true" unique="true"/>
+    <property name="Descripcion" column="rol_descripcion"/>
+    <property name="Activado" column="rol_activado" not-null="true"/>
+    <property name="FechaBaja" column="rol_fechabaja"/>
+    <bag name="Permisos" table="Rol_Permiso">
+      <key column="rol_id" not-null="true" foreign-key="fk_RolPermiso_Rol"/>
+      <many-to-many class="Permiso" column="per_id" foreign-key="fk_RolPermiso_Permiso"/>
+    </bag>
+    <bag name="Roles" table="Rol_Rol">
+      <key column="rol_id_padre" not-null="true" foreign-key="fk_RolRol_Padre"/>
+      <many-to-many class="Rol" column="rol_id_hijo" foreign-key="fk_RolRol_Hijo"/>
+    </bag>
+  </class>
+</hibernate-mapping>

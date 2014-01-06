@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.scheduler">
+  <class name="Job">
+    <id name="Id" column="job_id"><generator class="assigned"/></id>
+    <property name="Crontab" column="job_crontab"/>
+    <property name="Nombre" column="job_nombre"/>
+    <property name="Descripcion" column="job_descripcion"/>
+    <property name="Inicio" column="job_inicio" not-null="false"/>
+    <property name="Ultima" column="job_ultima" not-null="false" />
+    <property name="Siguiente" column="job_siguiente" not-null="false"/>
+    <property name="FechaBaja" column="job_fechabaja" not-null="true"/>
+    <property name="Activo" column="job_activo"/>
+    <many-to-one name="Usuario" class="scioSecureLibrary.dominio.Usuario" not-null="false" foreign-key="fk_Job_Usuario">
+      <column name="job_usuario" index="ifk_job_usuario"/>
+    </many-to-one>
+    <property name="Ejecutando" column="job_ejecutando"/>
+    <bag name="Listas" table="Job_TipoListaGestion" lazy="false" cascade="save-update">
+      <key column="job_id"/>
+      <many-to-many class="sgmpro.dominio.configuracion.TipoListaGestion" column="tlg_id"/>
+    </bag>
+    <bag name="Ejecuciones" cascade="all">
+      <key column="exe_job"/>
+      <one-to-many class="Ejecucion"/>
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Pago">
+    <id name="Id" column="pag_id"><generator class="assigned"/></id>
+    <property name="Fecha" column="pag_fecha" not-null="true"/>    
+    <many-to-one name="Tipo" column="pag_tipo" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Pago_Tipo"/>
+    <many-to-one name="Estado" column="pag_estado" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Pago_Estado"/>
+    <property name="Descripcion" column="pag_descripcion"/>
+    <property name="Capital" column="pag_capital"/>
+    <property name="Interes" column="pag_interes"/>
+    <property name="Honorarios" column="pag_honorarios"/>
+    <property name="Gastos" column="pag_gastos"/>
+    <many-to-one name="FormaPago" column="pag_formapago" class="scioParamLibrary.dominio.Parametro" not-null="true" foreign-key="fk_Pago_FormaPago"/>
+    <many-to-one name="Cuenta" class="Cuenta" not-null="true" foreign-key="fk_Pago_Cuenta">
+      <column name="pag_cuenta" index="ifk_pago_cuenta"/>
+    </many-to-one>
+    <property name="FechaUMod" column="pag_fechaumod" not-null="true"/>
+    <property name="FechaBaja" column="pag_fechabaja" />
+    <bag name="Imputaciones" cascade="all">
+      <key column="imp_pago"/>
+      <one-to-many class="Imputacion"/>
+    </bag>
+    <bag name="Recibos" cascade="all">
+      <key column="rec_pago"/>
+      <one-to-many class="Recibo"/>
+    </bag>
+  </class>
+</hibernate-mapping>

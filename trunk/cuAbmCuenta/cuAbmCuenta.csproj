@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45AF5D74-F43A-4275-927A-62E8C5EC72D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cuAbmCuenta</RootNamespace>
+    <AssemblyName>cuAbmCuenta</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\sgmpro\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\sgmpro\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\trunk\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\trunk\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shared\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.1001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\shared\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CUListEstadosCuenta.cs" />
+    <Compile Include="CUAbmCuenta.cs" />
+    <Compile Include="CUListCuentas.cs" />
+    <Compile Include="PanelAbmCuenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelAbmCuenta.Designer.cs">
+      <DependentUpon>PanelAbmCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelListCuentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelListCuentas.Designer.cs">
+      <DependentUpon>PanelListCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelPreviewCuenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelPreviewCuenta.Designer.cs">
+      <DependentUpon>PanelPreviewCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cuAbmConvenio\cuAbmConvenio.csproj">
+      <Project>{38971C02-215A-4AE3-AD4C-A313474F8365}</Project>
+      <Name>cuAbmConvenio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cuAbmDeuda\cuAbmDeuda.csproj">
+      <Project>{B446B720-1758-4EDB-8288-EADFA89DF976}</Project>
+      <Name>cuAbmDeuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cuAbmGestion\cuAbmGestion.csproj">
+      <Project>{3E635307-65A8-4A5E-A1D6-43500C570726}</Project>
+      <Name>cuAbmGestion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cuAbmPago\cuAbmPago.csproj">
+      <Project>{EAE65022-7B4D-4FF4-81FA-4D3A6C3EAACC}</Project>
+      <Name>cuAbmPago</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioBaseLibrary\scioBaseLibrary.csproj">
+      <Project>{AD2461E2-4B9D-4FDE-A137-E09106E69C0A}</Project>
+      <Name>scioBaseLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioControlLibrary\scioControlLibrary.csproj">
+      <Project>{59868B40-E020-4670-A050-0416612DC0F4}</Project>
+      <Name>scioControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioParamLibrary\scioParamLibrary.csproj">
+      <Project>{B7850306-4B1E-4CB6-8348-0AD2D9DF250D}</Project>
+      <Name>scioParamLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioPersistentLibrary\scioPersistentLibrary.csproj">
+      <Project>{7E75D0C5-513D-4FEF-BD22-1FBD9E7E3441}</Project>
+      <Name>scioPersistentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioSecureLibrary\scioSecureLibrary.csproj">
+      <Project>{1AEAFA5B-198F-4EA9-9BB6-E3F68F5DF0A2}</Project>
+      <Name>scioSecureLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioThirdPartLibrary\scioThirdPartLibrary.csproj">
+      <Project>{29546862-CA49-4A1D-9DD5-6513536D6C80}</Project>
+      <Name>scioThirdPartLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\scioToolLibrary\scioToolLibrary.csproj">
+      <Project>{2F345668-0201-4BD5-AE30-97A0742E6D3F}</Project>
+      <Name>scioToolLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sgmpro\sgmpro.csproj">
+      <Project>{2D8306B3-9299-4D45-9E90-2C2DF4F39A4C}</Project>
+      <Name>sgmpro</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PanelAbmCuenta.resx">
+      <DependentUpon>PanelAbmCuenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelListCuentas.resx">
+      <DependentUpon>PanelListCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelPreviewCuenta.resx">
+      <DependentUpon>PanelPreviewCuenta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionar_tb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgheaderlinea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanquear.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convenio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuentaico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tramo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanquear1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

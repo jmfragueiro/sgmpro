@@ -1,0 +1,34 @@
+<Modules>
+  <Module PersistentId="38971C02-215A-4AE3-AD4C-A313474F8365" ModuleId="cuAbmConvenio" />
+  <Module PersistentId="59868B40-E020-4670-A050-0416612DC0F4" ModuleId="scioControlLibrary" />
+  <Module PersistentId="EAE65022-7B4D-4FF4-81FA-4D3A6C3EAACC" ModuleId="cuAbmPago" />
+  <Module PersistentId="2D8306B3-9299-4D45-9E90-2C2DF4F39A4C" ModuleId="sgmpro" />
+  <Module PersistentId="7E75D0C5-513D-4FEF-BD22-1FBD9E7E3441" ModuleId="scioPersistentLibrary" />
+  <Module PersistentId="2F345668-0201-4BD5-AE30-97A0742E6D3F" ModuleId="scioToolLibrary" />
+  <Module PersistentId="29546862-CA49-4A1D-9DD5-6513536D6C80" ModuleId="scioThirdPartLibrary" />
+  <Module PersistentId="AD2461E2-4B9D-4FDE-A137-E09106E69C0A" ModuleId="scioBaseLibrary" />
+  <Module PersistentId="B7850306-4B1E-4CB6-8348-0AD2D9DF250D" ModuleId="scioParamLibrary" />
+  <Module PersistentId="62ADA017-03DE-40B8-BD2B-94546279EC9D" ModuleId="cuAbmRecibo" />
+  <Module PersistentId="A68EA023-3464-492E-BEF4-95C15CD5D2B7" ModuleId="cuGenerarInformes" />
+  <Module PersistentId="630CB75E-CC26-4C48-BD06-A804E9C5C9D6" ModuleId="cuAbmContacto" />
+  <Module PersistentId="1AEAFA5B-198F-4EA9-9BB6-E3F68F5DF0A2" ModuleId="scioSecureLibrary" />
+  <Module PersistentId="C59F2E0D-CB6B-4515-AF5A-ED0E68C1A4BD" ModuleId="cuAbmFactura" />
+  <Module PersistentId="FEC4C746-F212-4A91-BB02-2FED8F384825" ModuleId="toolsGestion" />
+  <Module PersistentId="4134C84B-6CB8-4C1A-8124-15E0C6E3B910" ModuleId="cuConfigurarUsuarios" />
+  <Module PersistentId="7EABBDD3-EBC8-43C4-870C-D4F761F177EA" ModuleId="cuAbmPredicado" />
+  <Module PersistentId="E540F21A-CBF2-47C9-8A3A-BA0E7A71827A" ModuleId="cuGenerarJobs" />
+  <Module PersistentId="04CA774E-ECDB-419E-95C7-F80701AE85C4" ModuleId="cuSeleccionarCuenta" />
+  <Module PersistentId="F35B5050-39BC-4796-91FE-9B2584C974EC" ModuleId="cuAbmPersona" />
+  <Module PersistentId="DFE41A83-00E6-446D-BCFD-2C9BF38CB5AC" ModuleId="cuAbmEntidad" />
+  <Module PersistentId="3FE2090B-3BCC-4215-B463-BF69A8BADC43" ModuleId="cuAbmProducto" />
+  <Module PersistentId="45AF5D74-F43A-4275-927A-62E8C5EC72D3" ModuleId="cuAbmCuenta" />
+  <Module PersistentId="3E635307-65A8-4A5E-A1D6-43500C570726" ModuleId="cuAbmGestion" />
+  <Module PersistentId="3B28177B-6F70-4AEF-915B-908F5A4EB96E" ModuleId="cuAbmRelacion" />
+  <Module PersistentId="EDD2DB4F-B1C4-4A3D-B4C3-599B4BDDB7D5" ModuleId="cuGestionar" />
+  <Module PersistentId="B446B720-1758-4EDB-8288-EADFA89DF976" ModuleId="cuAbmDeuda" />
+  <Module PersistentId="E39A9314-1294-4F23-AF05-4F7E34388940" ModuleId="scioReportLibrary" />
+  <Module PersistentId="9FF6FAFA-D1F7-4A7F-A451-CB63BD1FB518" ModuleId="cuListaGestion" />
+  <Module PersistentId="24304A9F-69A4-4E8F-BE2B-8759727FD29F" ModuleId="cuCargaMasiva" />
+  <Module PersistentId="46E3A4FB-5312-4F65-B9D7-843746675EBD" ModuleId="scioLoggingLibrary" />
+  <Module PersistentId="A1532754-3BF9-4DEB-A8DC-725269438C5C" ModuleId="scioInterfazLibrary" />
+</Modules>

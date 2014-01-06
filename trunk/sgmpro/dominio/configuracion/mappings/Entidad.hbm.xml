@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="sgmpro"
+                   namespace="sgmpro.dominio.configuracion">
+  <class name="Entidad">
+    <id name="Id" column="ent_id"><generator class="assigned"/></id>
+    <property name="Codigo" column="ent_codigo" not-null="true" unique="true"/>
+    <property name="Nombre" column="ent_nombre" not-null="true" unique="true"/>
+    <property name="Cuit" column="ent_cuit" not-null="true" unique="true"/>
+    <property name="Activada" column="ent_activada" not-null="true"/>
+    <property name="Direccion" column="ent_direccion"/>
+    <property name="Cp" column="ent_cp"/>
+    <property name="Telefono" column="ent_telefono" />
+    <property name="Fax" column="ent_fax"/>
+    <property name="Contacto" column="ent_contacto" not-null="true"/>
+    <property name="Email" column="ent_email" />
+    <property name="FechaBaja" column="ent_fechabaja"/>
+    <bag name="TiposGestion" table="Entidad_TipoGestion">
+      <key column="ent_id" not-null="true" foreign-key="fk_EntidadTipoGestion_Entidad"/>
+      <many-to-many class="scioParamLibrary.dominio.Parametro" 
+        column="par_id" foreign-key="fk_EntidadTipoGestion_Tipo"/>
+    </bag>    
+    <bag name="TiposRecibo" table="Entidad_TipoRecibo">
+      <key column="ent_id" not-null="true" foreign-key="fk_EntidadTipoRecibo_Entidad"/>
+      <many-to-many class="scioParamLibrary.dominio.Parametro" 
+        column="par_id" foreign-key="fk_EntidadTipoRecibo_Tipo"/>
+    </bag>
+    <bag name="FormasPago" table="Entidad_FormaPago" cascade="none">     
+      <key column="ent_id" not-null="true" foreign-key="fk_EntidadFormaPago_Entidad"/>
+      <many-to-many class="scioParamLibrary.dominio.Parametro" 
+        column="par_id" foreign-key="fk_EntidadFormaPago_Forma"/>
+    </bag>
+    <bag name="Productos" cascade="all">
+      <key column="pro_entidad"/>
+      <one-to-many class="Producto"/>
+    </bag>    
+    <bag name="TiposConvenio" table="Entidad_TipoConvenio" cascade="none">
+      <key column="ent_id" not-null="true" foreign-key="fk_EntidadTipoConvenio_Entidad"/>
+      <many-to-many class="TipoConvenio"
+        column="tcn_id" foreign-key="fk_EntidadTipoConvenio_Tipo"/>
+    </bag>
+  </class>
+</hibernate-mapping>
