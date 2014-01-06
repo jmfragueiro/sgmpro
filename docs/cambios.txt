@@ -26,3 +26,4 @@ Nuevos Desarrollos:
    para determinar las causas de porque en algunas ocasiones el primer recibo del día no está saliendo. Igual,
    para cuando no sale impreso el recibo, se puede ahora aplicar lo detallado en el punto 2) o lo detallado en
    el punto 5.A) de este mail.
+- 
